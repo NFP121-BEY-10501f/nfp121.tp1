@@ -50,7 +50,7 @@ public class Picture {
         roof.makeVisible();
 
         sun = new Circle();
-        sun.changeColor("yellow");
+        sun.changeColor("blue");
         sun.moveHorizontal(180);
         sun.moveVertical(-10);
         sun.changeSize(60);
@@ -80,6 +80,14 @@ public class Picture {
             window.changeColor("black");
             roof.changeColor("green");
             sun.changeColor("yellow");
+        }
+    }
+    /**
+     * Make sunset
+     */
+    public void sunset(){
+        if (sun != null){
+            sun.slowMoveVertical(180);
         }
     }
 
