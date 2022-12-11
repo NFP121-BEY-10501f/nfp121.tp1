@@ -122,13 +122,4 @@ public class AuditeurCNAMTest extends junit.framework.TestCase {
         assertEquals(" nom avec accent (é devient e) ? ", "chloe_c",
             auditeur1.login());
     }
-
-    public void test_nom_avec_particule_accent() {
-        question3.AuditeurCNAM auditeur1 = new question3.AuditeurCNAM("Nöel Marie",
-                "Marie", "12345");
-        assertEquals("Mme Nöel Marie Marie ", "Nöel Marie", auditeur1.nom());
-        assertEquals("Mme Nöel Marie Marie ", "Marie", auditeur1.prenom());
-        assertEquals("(ö devient o) et spéciaux se remplacent par _ ? ", "noel_m_m",
-            auditeur1.login());
-    }
 }
